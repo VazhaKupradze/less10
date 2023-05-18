@@ -206,6 +206,10 @@ header {
 
   color: #ffffff;
 }
+.sec-four-block button:hover {
+  background-color: #f3f3f3;
+  color: #000000;
+}
 .sec-foot {
   padding: 96px 0;
   background-color: black;
@@ -218,8 +222,16 @@ header {
   justify-content: space-between;
   color: aliceblue;
 }
+.foot-sec-cont {
+  max-width: 912px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .foot-box {
-  width: 228px;
+  max-width: 228px;
+  width: 100%;
 }
 .foot-box h5 {
   margin-top: 8px;
@@ -245,6 +257,7 @@ header {
   }
   .sec-one-block {
     flex-direction: column;
+    column-gap: 24px;
   }
   .sec-one-p {
     text-align: center;
@@ -270,8 +283,51 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .main-box {
+  .footer-sec {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .foot-box:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 744px) {
+  .sec-one-p {
     width: 100%;
+  }
+  .sec-one-p h3 {
+    font-size: 40px;
+  }
+  .sec-one-foot {
+    width: 100%;
+    flex-direction: column;
+  }
+  .brtg {
+    display: none;
+  }
+  .sec-two-block {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sec-two-cont {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    column-gap: 40px;
+  }
+  .sec-three-cont {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 375px) {
+  .footer-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot-box {
+    text-align: center;
   }
 }
